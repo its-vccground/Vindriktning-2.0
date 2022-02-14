@@ -1,6 +1,6 @@
 # Vindriktning-2.0
 User Friendly Firmware for Converting Ikea Vindriktning Partical Sensor into a Multi Sensor to be used as Standalone or integrate with Home Assistant.
-This Tasmota binary file is the upgraded version of the earlier Vindriktning firmware customised & shared by me a month ago, which was customized especially to be used with an Ikea Vindriktning Air Particle Sensor. You can flash a Wemos D1 mini or a similar esp8266 board and connect it to Vindriktning Sensor to transform it into a connected smart multi sensor unit. For deep details & connections diagram, watch my earlier video numbers 34 & 35 on "vccground" Youtube channel.
+This Tasmota binary file is the upgraded version of the earlier Vindriktning firmware customised & shared by me a month ago, which was customized especially to be used with an Ikea Vindriktning Air Particle Sensor. You can flash a Wemos D1 mini or a similar esp8266 board and connect it to Vindriktning Sensor to transform it into a connected smart multi sensor unit. For deep details & connections diagram, watch my earlier video numbers 34 & 35 on "vccground" Youtube channel https://tinyurl.com/vccground
 
 What's new in this updated VINDRIKTNING-2.0 binary file ?
 
@@ -18,7 +18,9 @@ How to use ?
     Download Zip file by clicking the green code button above.
     Follow the connections diagram to connect the wemos board to Vindriktning sensor (watch video 34 for details).
     Flash Wemos D1 mini with the provided Vindriktning-2.0 bin file.
-    Configure the module as explained in the video number 34 and you are good to go.
+    Configure the module as explained in the video number 34.
+    Configure A0(GPIO17) pin as ADC Light if you have connected LDR to pin A0 of D1 mini.
+    All Done !!!
     
 User Configuration Settings:
     
@@ -38,14 +40,19 @@ User Configuration Settings:
     MEM4 : Stores LUX lower threshold value. Default is 5. e.g.Command Syntex: MEM4 6
     MEM5 : Stores LUX upper threshold value. Default is 10. e.g.Command Syntex: MEM5 15
     MEM6 : Stores PM2.5 offset value for Home Assistant. Default is 0. e.g.Command Syntex: MEM6 45 or MEM6 -20
-    MEM7 : Stores AutoMode control value for controlling LED panel. Default is 1. e.g.Command Syntex: MEM7 0 or MEM7 1 
+    MEM7 : Enable/disable automatic LED control. Default is 1. e.g.Command Syntex: MEM7 0 or MEM7 1 
     
     Event ShowCurrent : Show currently configured memory variable values
     Event BackupMySettings : Backup currently configured memory variable values
     Event ShowBackup : Show variable values currently stored in backup
     Event RestoreMySettings : Restore memory variable values from backup
     Event RestoreDefaults : Restore all values to default
-    
-Full details on why and how to use these settings, are explained in video number 37 on "vccground" YouTube Channel.
 
-Join "vccground" telegram channel to ask any query thereafter.
+Note:
+
+- Set MEM4 to 0 if you want to keep the LED's ON in dark/night time. (Restart required)
+- Set MEM7 to 0 if you want to control LED's manually from Home Assistant. MEM4 should also be set to 0 when you set MEM7 0. (Restart required)
+
+Full details on why and how to use these settings, are explained in video number 37 on "vccground" YouTube Channel https://tinyurl.com/vccground
+
+Join "vccground" telegram channel https://t.me/vccground to ask any query thereafter.
