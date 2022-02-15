@@ -54,7 +54,7 @@ Note:
 - Set MEM7 to 0 if you want to control LED's manually from Home Assistant. MEM4 should also be set to 0 when you set MEM7 0. (Restart required)
 - Set MEM6 to calibrate PM2.5 sensor value reported to HA via MQTT, in case you feel that your sensor is not providing the correct value. 
 
-Home Assistant PM2.5 offset(MEM6)YAML file sample code (optional):
+Home Assistant PM2.5 offset(MEM6) YAML file sample code (optional):
     
     sensor:
       - platform: mqtt
