@@ -16,7 +16,8 @@ Apart from basic Tasmota, The following functions are enabled in this bin file..
 How to use ?
 
     Download Zip file by clicking the green code button above.
-    Follow the connections diagram to connect the wemos board to Vindriktning sensor. Refer to provided connection diagram and watch video 34 for details.
+    Follow the provided "Connections Diagram" & "Orange LED Short" pictures to connect the wemos board to Vindriktning sensor.
+    Watch video number 34 for details.
     Simply Flash Wemos D1 mini with the provided Vindriktning-2.0 bin file using Tasmotizer or any other flasher.
     Configure the module as explained in the video.
     Configure A0(GPIO17) pin as ADC Light if you have connected LDR to pin A0 of D1 mini.
