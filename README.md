@@ -52,6 +52,7 @@ Note:
 - Memory variables and event commands are not case sensitive.
 - Set MEM4 to 0 if you want to keep the LED's ON in dark/night time too. (Restart required)
 - Set MEM7 to 0 if you want to control LED's manually from Home Assistant. MEM4 should also be set to 0 when you set MEM7 0. (Restart required)
+- Set MEM6 to calibrate PM2.5 sensor value reported to HA via MQTT, in case you feel that your sensor is not providing the correct value. 
 
 Home Assistant PM2.5 offset(MEM6)YAML file sample code (optional):
     
@@ -66,6 +67,6 @@ Home Assistant PM2.5 offset(MEM6)YAML file sample code (optional):
         icon: mdi:air-filter
         unit_of_measurement: "µg/m³"    
 
-Full details on why and how to use these settings, are explained in video number 37 on "vccground" YouTube Channel https://tinyurl.com/vccground
+Full details on why and how to use these settings, are explained in video 37 on "vccground" YouTube Channel https://tinyurl.com/vccground
 
 Join "vccground" telegram channel https://t.me/vccground to ask any query thereafter.
