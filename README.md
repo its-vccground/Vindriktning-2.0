@@ -11,6 +11,7 @@ Apart from basic Tasmota, The following functions are enabled in this bin file..
     Support for BMP085/BMP180/BMP280/BME280/BME680 and similar I2C sensors.
     Support for AHT10/15 I2C humidity and temperature sensor
     Support for Expressions and IF statements in Tasmota Rules.
+    Support for TM1637 Seven segment display module.
     All features are fully User customisable without any coding knowledge.
    
 How to use ?
