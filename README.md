@@ -1,5 +1,5 @@
 # Vindriktning-2.0
-User Friendly Firmware for Converting Ikea Vindriktning Partical Sensor into a Multi Sensor, to be used as Standalone or integrate with Home Assistant.
+User Friendly Firmware for Converting Ikea Vindriktning Particle Sensor into a Multi Sensor, to be used as Standalone or integrate with Home Assistant.
 This Tasmota binary file is the upgraded version of the earlier Vindriktning firmware shared by me a month ago, which was customized especially to be used with an Ikea Vindriktning Air Particle Sensor. Simply flash this binary on a Wemos D1 mini or a similar esp8266 board and connect it to Vindriktning Sensor to transform it into a connected smart multi sensor unit. Connection diagram for the same is provided with this binary. For more details, watch my video numbers 34 and 37 on "vccground" Youtube channel https://tinyurl.com/vccground
 
 What's new in this updated VINDRIKTNING-2.0 binary file ?
