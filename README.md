@@ -54,7 +54,9 @@ Note:
 - Memory variables and event commands are not case sensitive.
 - Set MEM4 to 0 if you want to keep the LED's ON in dark/night time too. (Restart required)
 - Set MEM7 to 0 if you want to control LED's manually from Home Assistant. MEM4 should also be set to 0 when you set MEM7 0. (Restart required)
-- Set MEM6 to calibrate PM2.5 sensor value reported to HA via MQTT, in case you feel that your sensor is not providing the correct value. 
+- Set MEM6 to calibrate PM2.5 sensor value reported to HA via MQTT, in case you feel the default sensor reading is incorrect.
+- After setting MEM6, the LED's may take time to synchronize with the new values. To minimise synchronization time, set MEM3 to a lower number or to Zero.
+- It is advisable to restart after changing any variable setting to let the system recognise it with immediate effect.
 
 Home Assistant PM2.5 offset(MEM6) YAML file sample code (optional):
     
