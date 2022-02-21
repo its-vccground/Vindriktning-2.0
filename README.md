@@ -62,7 +62,7 @@ Home Assistant PM2.5 offset(MEM6) YAML file sample code (optional):
       - platform: mqtt
         name: "Vindriktning PM2.5"
         state_topic: "tele/<mqtt_topic>/SENSORPM25"
-        value_template: "{{value_json['VINDRIKTNING']['PM25'] | round(0) }}"
+        value_template: "{{value_json | round(0) }}"
         availability_topic: "tele/<mqtt_topic>/LWT"
         payload_available: "Online"
         payload_not_available: "Offline"
